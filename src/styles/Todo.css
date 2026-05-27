@@ -6,6 +6,7 @@
     align-items: center;
     padding: 50px;
     gap: 10px;
+    font-family: "Gochi Hand";
 }
 
 .top-section {
@@ -30,12 +31,10 @@
     gap: 12px;
 }
 #day {
-    font-family: 'Pixelify Sans';
     font-size: 20px;
     font-weight: 600;
 }
 #number {
-    font-family: 'Pixelify Sans';
     font-size: 32px;
     color: #FEF6F0;
     background-color: #6E763F;
@@ -43,7 +42,6 @@
     border-radius: 50px;
 }
 #month {
-    font-family: 'Pixelify Sans';
     font-size: 16px;
 }
 
@@ -66,9 +64,8 @@
     flex-direction: column;
 }
 .progression h3 {
-    font-family: 'Pixelify Sans';
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-top: 8px;
     font-weight: 600;
 }
 #progress-bar {
@@ -126,34 +123,51 @@
     margin-bottom: 24px;
     padding: 16px;
     gap: 14px;
+    font-size: 20px;
+}
+.bottom-section h3 {
+    margin: 0%;
 }
 .bottom-section p {
-    justify-content: left;
+    text-align: left;
 }
 .bottom-section .bx {
     color: #151E08;
     margin-right: 16px;
 }
 .bottom-section p span {
-    font-family: 'Pixelify Sans';
+    position: absolute;
     color: #151E08;
     cursor: pointer;
-    justify-content: left;
+    display: inline-block;
+}
+
+.bottom-section p span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #151E08;
+    transition: width 0.35s ease;
+}
+
+.bottom-section p span.done::after {
+    width: 100%;
 }
 
 #finish-btn {
-    font-family: 'Pixelify Sans';
     font-size: 24px;
     color: #FEF6F0;
-    background-color: #97A085;
-    border: 4px solid #151E08;
+    background-color: #6E763F;
+    border: 4px solid #6E763F;
     border-radius: 10px;
     padding: 8px 24px;
-    box-shadow: 2px 2px 4px rgba(21, 30, 8, 0.6);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 #finish-btn:hover {
-    transform: scale(1.1) perspective(1px);
-    transition: 0.3 ease;
-    cursor: pointer;
+    transform: scale(1.05);
 }
 

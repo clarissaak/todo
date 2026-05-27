@@ -75,7 +75,7 @@ function Todo() {
             <div className="top-section">
                 <div className="datetime">
                     <span id="day">
-                        {weekday[today.getDay()]}
+                        {weekday[today.getDay()].toLowerCase()}
                     </span>
 
                     <span id="number">
@@ -83,14 +83,14 @@ function Todo() {
                     </span>
                     
                     <span id="month">
-                        {monthNames[today.getMonth()]}
+                        {monthNames[today.getMonth()].toLowerCase()}
                     </span>
 
                 </div>
 
                 <div className="right-section">
                     <div className="progression">
-                        <h3>Progress</h3>
+                        <h3>progress</h3>
 
                         <progress
                             id="progress-bar"
@@ -117,6 +117,7 @@ function Todo() {
             </div>
 
             <div className="bottom-section">
+              <h3>to do:</h3>
                 {tasks.map((task, index) => (
                     <p key={index}>
                         <i className="bx bxs-leaf"></i>
