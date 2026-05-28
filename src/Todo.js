@@ -151,7 +151,7 @@ function Todo() {
             </button>
             <div className={showPopup ? "popup open-popup" : "popup"}>
               <h2>Congratulations!</h2>
-              <p>You have completed {tasks.length} tasks</p>
+              <p>You have completed {completedTasks} tasks</p>
               <button onClick={closePopup}>OK</button>
             </div>
         </div>
