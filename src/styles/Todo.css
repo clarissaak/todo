@@ -171,3 +171,37 @@
     transform: scale(1.05);
 }
 
+.popup {
+    width: 400px;
+    background-color: #FEF6F0;
+    border: 4px solid #CAC7B1;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 30px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.open-popup{
+    opacity: 100%;
+}
+
+.popup button {
+    font-size: 16px;
+    color: #FEF6F0;
+    background-color: #6E763F;
+    border: 4px solid #6E763F;
+    border-radius: 10px;
+    padding: 8px 24px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    transform: scale(1.05);
+}
+

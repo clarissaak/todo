@@ -70,6 +70,15 @@ function Todo() {
             ? 0
             : (completedTasks / tasks.length) * 100;
 
+    const [showPopup, setShowPopup] = useState(false);
+    function openPopup() {
+      setShowPopup(true)
+    }
+
+    function closePopup() {
+      setShowPopup(false)
+    }
+
     return (
         <div className="todo">
             <div className="top-section">
@@ -137,10 +146,14 @@ function Todo() {
                     </p>
                 ))}
             </div>
-
-            <button id="finish-btn">
+            <button id="finish-btn" onClick={openPopup}>
                 FINISH DAY
             </button>
+            <div className={showPopup ? "popup open-popup" : "popup"}>
+              <h2>Congratulations!</h2>
+              <p>You have completed {tasks.length} tasks</p>
+              <button onClick={closePopup}>OK</button>
+            </div>
         </div>
     );
 }
