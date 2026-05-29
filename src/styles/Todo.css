@@ -7,6 +7,7 @@
     padding: 50px;
     gap: 10px;
     font-family: "Gochi Hand";
+    color: #684F51;
 }
 
 .top-section {
@@ -20,8 +21,8 @@
 .datetime {
     width: 30%;
     height: 100%;
-    background-color: #FEF6F0;
-    border: 4px solid #CAC7B1;
+    background-color: #FFFBF9;
+    border: 4px solid #F8E4EE;
     border-radius: 25px;
     text-align: center;
     justify-content: center;
@@ -36,8 +37,8 @@
 }
 #number {
     font-size: 32px;
-    color: #FEF6F0;
-    background-color: #6E763F;
+    color: #FFFBF9;
+    background-color: #92B683;
     padding: 8px 12px;
     border-radius: 50px;
 }
@@ -54,8 +55,8 @@
 
 .progression {
     height: 60%;
-    background-color: #FEF6F0;
-    border: 4px solid #CAC7B1;
+    background-color: #FFFBF9;
+    border: 4px solid #F8E4EE;
     border-radius: 25px;
     text-align: center;
     justify-content: center;
@@ -75,11 +76,11 @@
     border-radius: 10px;
 }
 #progress-bar::-webkit-progress-bar {
-    background-color: #CAC7B1;
+    background-color: #d8e2d3;
     border-radius: 10px;
 }
 #progress-bar::-webkit-progress-value {
-    background-color: #6E763F;
+    background-color: #92B683;
     border-radius: 10px;
     transition: width 0.5s ease-in-out;
 }
@@ -99,8 +100,8 @@
 }
 .add-task button {
     font-size: 24px;
-    color: #FEF6F0;
-    background-color: #6E763F;
+    color: #FFFBF9;
+    background-color: #f2cbda;
     padding: 10px 16px;
     outline: none;
     border: none;
@@ -120,8 +121,8 @@
     height: 50%;
     max-height: 50%;
     overflow-y: auto;
-    background-color: #FEF6F0;
-    border: 4px solid #CAC7B1;
+    background-color: #FFFBF9;
+    border: 4px solid #F8E4EE;
     border-radius: 25px;
     margin-bottom: 24px;
     padding: 16px;
@@ -135,12 +136,11 @@
     text-align: left;
 }
 .bottom-section .bx {
-    color: #151E08;
+    color: #92B683;
     margin-right: 16px;
 }
 .bottom-section p span {
     position: relative;
-    color: #151E08;
     cursor: pointer;
     display: inline-block;
 }
@@ -163,12 +163,13 @@
 #finish-btn {
     font-size: 24px;
     color: #FEF6F0;
-    background-color: #6E763F;
-    border: 4px solid #6E763F;
+    background-color: #f2cbda;
+    border: 4px solid #f2cbda;
     border-radius: 10px;
     padding: 8px 24px;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
+    font-family: "Gochi Hand";
 }
 #finish-btn:hover {
     transform: scale(1.05);
@@ -176,32 +177,35 @@
 
 .popup {
     width: 400px;
-    background-color: #FEF6F0;
-    border: 4px solid #CAC7B1;
+    background-color: #FFFBF9;
+    border: 4px solid #F8E4EE;
     border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
-    opacity: 0%;
+    opacity: 0;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 30px 30px;
     transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
 }
 
 .open-popup{
-    opacity: 100%;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .popup button {
     font-size: 16px;
-    color: #FEF6F0;
-    background-color: #6E763F;
-    border: 4px solid #6E763F;
+    color: #FFFBF9;
+    background-color: #f2cbda;
+    border: 4px solid #f2cbda;
     border-radius: 10px;
     padding: 8px 24px;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
+    font-family: "Gochi Hand";
 }
 
 .popup button:hover {
