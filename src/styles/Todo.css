@@ -97,6 +97,8 @@
     padding: 14px;
     border-radius: 50px;
     width: 100%;
+    font-family: "Gochi Hand";
+    font-size: large;
 }
 .add-task button {
     font-size: 24px;
@@ -162,7 +164,7 @@
 
 #finish-btn {
     font-size: 24px;
-    color: #FEF6F0;
+    color: #FFFBF9;
     background-color: #f2cbda;
     border: 4px solid #f2cbda;
     border-radius: 10px;
